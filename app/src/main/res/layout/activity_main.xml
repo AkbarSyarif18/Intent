@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="189dp">
+
+        <Spinner
+            android:id="@+id/negara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:layout_marginTop="10dp"
+            android:entries="@array/spinnernegara"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/rb_above19"
+            android:background="#DB7E00"
+            android:text="Country"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_above19"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb_1318"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="18th and above"
+            android:textColorLink="#3A3E6C" />
+
+        <RadioButton
+            android:id="@+id/rb_1318"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb_under13"
+            android:layout_marginTop="10dp"
+            android:text="13th until 18th" />
+
+        <RadioButton
+            android:id="@+id/rb_under13"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginTop="10dp"
+            android:text="Under 13th" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/cb_fantasy"
+            android:background="#DB7E00"
+            android:text="Age"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/cb_fantasy"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb_action"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="108dp"
+            android:text="Fantasy"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/cb_action"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb_romance"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="108dp"
+            android:text="Action"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/cb_romance"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="108dp"
+            android:text="Romance"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/cb_horor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb_comedy"
+            android:layout_marginTop="10dp"
+            android:text="Horror"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/cb_comedy"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb_thriller"
+            android:layout_marginTop="10dp"
+            android:text="Comedy"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/txt_directed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_judul"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Directed by"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi Movie"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txt_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Title"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/txt_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_directed"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Home Production"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/txt_home"
+            android:background="#DB7E00"
+            android:text="Genre"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/cb_thriller"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="10dp"
+            android:text="Thriler"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/negara"
+            android:layout_marginTop="10dp"
+            android:hint="Select Date"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_proccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tanggal"
+            android:layout_marginTop="9dp"
+            android:text="PROCESS"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+
+
+</ScrollView>
